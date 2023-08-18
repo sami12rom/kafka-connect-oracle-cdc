@@ -1,0 +1,14 @@
+{
+    "name": "pg-bpm-source",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "database.hostname": "postgres",
+        "database.port": "5432",
+        "database.user": "postgres",
+        "database.password": "postgres",
+        "database.dbname": "postgres",
+        "topic.prefix": "dbz",
+        "table.include.list": "public.bpm",
+        "plugin.name": "pgoutput"
+    }
+}
